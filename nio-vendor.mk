@@ -7,6 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
+    vendor/motorola/nio/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc \
+    vendor/motorola/nio/proprietary/vendor/bin/fpc_ident:$(TARGET_COPY_OUT_VENDOR)/bin/fpc_ident \
     vendor/motorola/nio/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/nio/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/nio/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -21,6 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
     vendor/motorola/nio/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/nio/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
+    vendor/motorola/nio/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc \
     vendor/motorola/nio/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml \
     vendor/motorola/nio/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
     vendor/motorola/nio/proprietary/vendor/etc/sensors/config/lsm6ds3c_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6ds3c_0.json \
@@ -100,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/motorola/nio/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/motorola/nio/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/motorola/nio/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/motorola/nio/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/motorola/nio/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
     vendor/motorola/nio/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
