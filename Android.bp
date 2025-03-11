@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "vendor/motorola/sm8250-common",
+        "hardware/motorola",
         "vendor/qcom/opensource/display",
     ],
 }
@@ -3491,8 +3492,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libpn557_fw.so",
-            ],
-            shared_libs: [
             ],
         },
     },
