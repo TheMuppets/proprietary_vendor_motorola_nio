@@ -172,6 +172,6 @@ PRODUCT_PACKAGES += \
     libvidhance_stabilizer \
     vendor.egistec.hardware.fingerprint@2.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    fpc_ident \
     android.hardware.biometrics.fingerprint@2.1-service-ets \
-    android.hardware.biometrics.fingerprint@2.1-service-fpc
+    android.hardware.biometrics.fingerprint@2.1-service-fpc \
+    fpc_ident

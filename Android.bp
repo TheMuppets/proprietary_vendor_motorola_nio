@@ -3845,34 +3845,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_binary {
-    name: "fpc_ident",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/fpc_ident",
-            ],
-            shared_libs: [
-                "libQSEEComAPI",
-                "liblog",
-                "libion",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service-ets",
     owner: "motorola",
     target: {
@@ -3927,6 +3899,35 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "libion",
                 "com.motorola.hardware.biometric.fingerprint@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "fpc_ident",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/fpc_ident",
+            ],
+            shared_libs: [
+                "libQSEEComAPI",
+                "liblog",
+                "libion",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
