@@ -3254,7 +3254,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmot_chi_desktop_helper.so",
             ],
             shared_libs: [
-                "libgui_shim_vendor",
+                "libgui_buffer_shim_vendor",
                 "libutils",
                 "libcutils",
                 "liblog",
